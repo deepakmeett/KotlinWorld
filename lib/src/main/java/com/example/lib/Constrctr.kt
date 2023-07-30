@@ -5,9 +5,9 @@ fun main() {
     val pr1 = Person("John", 25)
     val pr2 = Person("Jane")
     val pr3 = Person()
-    println(pr1.printValues())
-    println(pr2.printValues())
-    println(pr3.printValues())
+    (pr1.printValues())
+    (pr2.printValues())
+    (pr3.printValues())
 
     //region 2nd point example
 //    val person1 = Person("John", 30) // Using primary constructor
@@ -27,6 +27,8 @@ fun main() {
 //    1. Providing default values: A secondary constructor can provide default values for properties that are not defined in the primary constructor. This can simplify the creation of instances of the class.
 //    2. Overloading constructors: A secondary constructor can provide an overloaded version of the primary constructor. This can be useful when you need to create instances of the class with different sets of parameters.
 //    3. Initialization logic: A secondary constructor can be used to initialize properties that cannot be initialized in the primary constructor. For example, if you need to perform some complex calculations or data manipulation before initializing the properties, a secondary constructor can be used.
+//    4. A class can have one or more secondary constructors.
+//    5. Secondary constructors are defined inside the class body and are prefixed with the constructor keyword.
 }
 
 class Person(private val name: String = "David", private val age: Int) {
