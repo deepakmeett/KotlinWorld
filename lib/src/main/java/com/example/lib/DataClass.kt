@@ -29,7 +29,7 @@ fun main(){
     println(user)
     //endregion
 
-    //region Use of Copy keyword
+    //region Use of Copy keyword(using object of user and just change the name value)
     val user3 = user1.copy(name = "Rock")
     println(user3)
     //endregion
