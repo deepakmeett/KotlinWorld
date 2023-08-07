@@ -11,6 +11,20 @@ fun main(){
         println("Oh no :-( it's not equal")
     }
 
+    if (user === user1) {
+        println("Oh yeah :-) it's equal")
+    }else{
+        println("Oh no :-( it's not equal")
+    }
+
+//    'equals' method in custom classes to define custom equality comparisons based on your specific requirements.
+    if (user.equals(user1)) {
+        println("Oh yeah :-) it's equal")
+    }else{
+        println("Oh no :-( it's not equal")
+    }
+
+
     //region Print objects of class
     println(user)
     //endregion
