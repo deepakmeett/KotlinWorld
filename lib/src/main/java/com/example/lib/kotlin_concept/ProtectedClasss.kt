@@ -1,4 +1,4 @@
-package com.example.lib
+package com.example.lib.kotlin_concept
 
 open class MyBaseClass {
     protected val myProtectedField = "Hello, protected field!"

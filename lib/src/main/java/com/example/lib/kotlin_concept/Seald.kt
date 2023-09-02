@@ -1,4 +1,4 @@
-package com.example.lib
+package com.example.lib.kotlin_concept
 
 //sealed class Mona {
 //    data class Success(val data: String) : Mona()

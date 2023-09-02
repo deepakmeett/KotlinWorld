@@ -1,4 +1,4 @@
-package com.example.lib
+package com.example.lib.kotlin_concept
 
 fun main() {
     val result1 = orderHighFun(2, 3, ::sum)

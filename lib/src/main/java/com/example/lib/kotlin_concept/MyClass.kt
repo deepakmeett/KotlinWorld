@@ -1,4 +1,4 @@
-package com.example.lib
+package com.example.lib.kotlin_concept
 
 import java.lang.Integer.sum
 

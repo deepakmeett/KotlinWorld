@@ -1,4 +1,4 @@
-package com.example.lib.dsa
+package com.example.lib.simple_programe
 
 
 fun main() {

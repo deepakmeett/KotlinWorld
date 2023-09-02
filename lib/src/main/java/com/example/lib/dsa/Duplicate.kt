@@ -1,8 +1,7 @@
 package com.example.lib.dsa
 
 fun main() {
-    val list = listOf("orange", "apple", "apple", "banana", "water", "bread",
-                      "banana", "apple", "apple", "banana", "water", "bread", "banana")
+    val list = listOf("orange", "apple", "apple", "banana", "water", "bread")
 
     val elementCounts = mutableMapOf<String, Int>()
 

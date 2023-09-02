@@ -4,7 +4,7 @@ package com.example.lib.simple_programe
 fun main() {
     val list = mutableListOf(0, 1)
     var v1 = 0
-    for (i in 0..10) {
+    for (i in 0..6) {
         if (i <= list.size - 1) {
             v1 += list[i]
             list.add(v1)
