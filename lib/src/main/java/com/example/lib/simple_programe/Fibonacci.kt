@@ -1,17 +1,15 @@
 package com.example.lib.simple_programe
 
-
 fun main() {
-    val list = mutableListOf(0, 1)
-    var v1 = 0
+    var a = 0
+    var b = 1
+    var result = 0
+    println(a)
+    println(b)
     for (i in 0..6) {
-        if (i <= list.size - 1) {
-            v1 += list[i]
-            list.add(v1)
-
-        }
+        result = a + b
+        a = b
+        b = result
+        println(result)
     }
-    list.removeAt(0)
-    list.removeAt(0)
-    println(list)
 }
