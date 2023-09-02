@@ -1,23 +1,19 @@
 package com.example.lib.simple_programe
 
 fun main() {
-    var firstElement = 0
-    var secondElement = 0
-    var bwElement = 0
-    val list = listOf(1, 3, 5, 7, 9, 10)
-    for (i in list.indices) {
-        if (i < list.size - 1) {
-            firstElement = list[i]
-            bwElement = firstElement + 1
-        }
-        if (i + 1 < list.size) {
-            secondElement = list[i + 1]
-        }
+    val numbers = arrayOf(1, 3, 2)
 
-        if (bwElement in (firstElement + 1) until secondElement){
-            println("Missing number is -> $bwElement")
-        }
+    var highestNumber = 0
 
-//        bwElement = 0
+    for (number in numbers) {
+        if (highestNumber < number) {
+            highestNumber = number
+        }
+    }
+
+    if (highestNumber != 0) {
+        println("The highest number is: $highestNumber")
+    } else {
+        println("The array is empty.")
     }
 }
