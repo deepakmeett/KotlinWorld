@@ -9,4 +9,7 @@ fun main() {
         Why don't we go somewhere
     """.trimIndent()
     println(message)
+
+    val b = false
+    println(b.not())
 }
