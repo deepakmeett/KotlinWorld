@@ -1,4 +1,6 @@
-package com.example.lib.dsa
+package com.example.lib.simple_programe
+
+import kotlin.collections.iterator
 
 fun main() {
     val list = listOf("orange", "apple", "apple", "banana", "water", "bread")
