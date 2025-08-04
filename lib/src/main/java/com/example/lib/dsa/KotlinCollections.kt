@@ -85,9 +85,9 @@ fun main() {
 //    val list = listOf("Joey", "Monika", "Phoebe", "Chandler", "Ross", "Rachel")
 //    val newList = list.sortedBy { it } // sorting by alphabetical order
 
-    val sentence = "Welcome to BeginnersBook"
-    val wordList = sentence.split(" ").map { it.reversed() }
-    println(wordList)
+//    val sentence = "Welcome to BeginnersBook"
+//    val wordList = sentence.split(" ").map { it.reversed() }
+//    println(wordList)
 
 
 //    var start = 0

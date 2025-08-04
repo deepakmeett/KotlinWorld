@@ -3,17 +3,17 @@ package com.example.lib.simple_programe
 fun main() {
 
     val word = "Deepak"
+    val charArray = word.lowercase().toCharArray()
+    val duplicates = mutableSetOf<Char>()
+    val seen = mutableSetOf<Char>()
 
-    var gotChar = ""
-
-    val char = word.toCharArray()
-
-    for (i in 0..char.size) {
-        for (j in (i + 1) until char.size) {
-            if (char[i] == char[j]) {
-                gotChar = char[j].toString()
-                print(gotChar)
-            }
+    for (i in charArray.indices) {
+        if (charArray[i] in seen) {
+            duplicates.add(charArray[i])
+        } else {
+            seen.add(charArray[i])
         }
     }
+
+    println("Duplicate characters: ${duplicates.joinToString()}")
 }
