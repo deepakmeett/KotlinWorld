@@ -6,7 +6,7 @@ fun main() {
 
     for (num in list) {
         if (num in freqMap) {
-            freqMap[num] = freqMap[num]?.plus(1) as Int
+            freqMap[num] = (freqMap[num] ?: 0) +1
         } else {
             freqMap[num] = 1
         }

@@ -1,7 +1,7 @@
 package com.example.lib.simple_programe
 
 fun main() {
-    val list = listOf(7, 6, 7, 8, 4, 9)
+    val list = listOf(7, 6, 8)
 
     var min = Int.MAX_VALUE
     var secondMin = Int.MAX_VALUE

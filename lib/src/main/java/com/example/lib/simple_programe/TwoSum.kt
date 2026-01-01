@@ -4,10 +4,27 @@ var secondIndex = 0
 var firstIndex = 0
 
 fun main() {
-    val myArray = intArrayOf(2, 7, 11, 15)
-    val target = 9
-    val result = twoSum(myArray, target)
-    println(result.toList())
+//    val myArray = intArrayOf(2, 7, 11, 15)
+//    val target = 9
+//    val result = twoSum(myArray, target)
+//    println(result.toList())
+
+//    Input 000111223344
+//    Outpit 1234____
+
+    val arr = intArrayOf(0, 0, 0, 1, 1, 1, 2, 2, 3, 3, 4)
+
+    var v = 1
+    for (i in arr.indices) {
+        if (arr[i] != 0){
+            if (v != i){
+                arr[v] = arr[i]
+            }
+            v++
+        }
+    }
+
+    print(arr.toList())
 }
 
 fun twoSum(myArray: IntArray, target: Int): IntArray {
