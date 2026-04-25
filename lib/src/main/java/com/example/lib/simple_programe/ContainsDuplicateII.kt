@@ -1,8 +1,8 @@
 package com.example.lib.simple_programe
 
 fun main() {
-    val nums = intArrayOf(1, 2, 3, 1, 2, 3)
-    val k = 2
+    val nums = intArrayOf(1, 2, 3, 1)
+    val k = 3
     println(containsNearbyDuplicate(nums, k))
 }
 
