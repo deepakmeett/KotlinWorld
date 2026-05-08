@@ -7,18 +7,19 @@ fun main() {
 }
 fun isAnagram(s: String, t: String): Boolean {
     if (s.length != t.length) return false
-    val map = mutableMapOf<Char, Int>()
-    for (c in s) {
-        map[c] = map.getOrDefault(c, 0) + 1
-    }
-    for (c in t) {
-        if (!map.containsKey(c)) return false
 
-        val count = map[c] ?: return false // Get count or return false if null
-        map[c] = count - 1
-        if (map[c] == 0) {
-            map.remove(c)
+    val freq = IntArray(26)
+
+    for (i in s.indices){
+        freq[s[i] - 'a']++
+        freq[t[i] - 'a']--
+    }
+
+    for(i in freq){
+        if(i != 0){
+            return false
         }
     }
-    return map.isEmpty()
+
+    return true
 }
