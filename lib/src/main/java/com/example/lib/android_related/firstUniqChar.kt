@@ -1,4 +1,6 @@
-package com.example.lib.simple_programe
+package com.example.lib.android_related
+
+import kotlin.text.iterator
 
 fun main() {
     val s = "leetcode"

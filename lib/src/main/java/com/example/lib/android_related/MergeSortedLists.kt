@@ -1,4 +1,4 @@
-package com.example.lib.simple_programe
+package com.example.lib.android_related
 
 fun main() {
     println(mergeSortedLists(listOf(1, 3, 5), listOf(2, 4, 6)))

@@ -1,4 +1,4 @@
-package com.example.lib.simple_programe
+package com.example.lib.android_related
 
 import kotlin.collections.iterator
 

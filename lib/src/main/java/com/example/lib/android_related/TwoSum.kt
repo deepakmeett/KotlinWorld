@@ -1,4 +1,4 @@
-package com.example.lib.simple_programe
+package com.example.lib.android_related
 
 fun main() {
     val myArray = intArrayOf(2, 7, 11, 15)

@@ -1,7 +1,4 @@
-package com.example.lib.simple_programe
-
-import java.util.Arrays
-
+package com.example.lib.android_related
 
 
 fun main() {

@@ -1,4 +1,6 @@
-package com.example.lib.simple_programe
+package com.example.lib.android_related
+
+import kotlin.collections.iterator
 
 fun main() {
     val words = arrayOf("apple", "ant", "bat", "ball")

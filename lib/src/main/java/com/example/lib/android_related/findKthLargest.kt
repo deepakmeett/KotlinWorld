@@ -1,4 +1,4 @@
-package com.example.lib.simple_programe
+package com.example.lib.android_related
 
 fun main() {
     val list = listOf(3, 2, 1, 5, 6, 4)
