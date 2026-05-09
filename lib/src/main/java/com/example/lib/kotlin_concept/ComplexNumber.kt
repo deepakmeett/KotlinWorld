@@ -1,4 +1,4 @@
-package com.example.lib.simple_programe
+package com.example.lib.kotlin_concept
 
 class ComplexNumber(var real: Double, var img: Double)
 
