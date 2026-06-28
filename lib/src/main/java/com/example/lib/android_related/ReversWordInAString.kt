@@ -15,27 +15,50 @@ fun main() {
 }
 
 fun reverseWord(t: String): String {
-    val arr = mutableListOf<String>()
-    var s = ""
-    for (i in t.indices) {
-        if (t[i] == ' ') {
-            if (s != "") {
-                arr.add(s)
-                s = ""
-            }
-        } else {
-            s += t[i]
-        }
+    //region Two Pointer approach
+    val sb = StringBuilder()
+    var right = t.length - 1
+
+    while (right >= 0) {
+        while (right >= 0 && t[right] == ' ') right--
+
+        if (right < 0) break
+
+        var left = right
+        while (left >= 0 && t[left] != ' ') left--
+
+        sb.append(t, left + 1, right + 1)
+        sb.append(" ")
+
+        right = left
     }
 
-    if (s != "" && s != " ") {
-        arr.add(s)
-    }
+    return sb.toString().trim()
+    //endregion
 
-    s = ""
-    for (i in arr.size - 1 downTo 0) {
-        s += arr[i]
-        if (i != 0) s += " "
-    }
-    return s
+    //region Brute Force approach
+//    val arr = mutableListOf<String>()
+//    var s = ""
+//    for (i in t.indices) {
+//        if (t[i] == ' ') {
+//            if (s != "") {
+//                arr.add(s)
+//                s = ""
+//            }
+//        } else {
+//            s += t[i]
+//        }
+//    }
+//
+//    if (s != "" && s != " ") {
+//        arr.add(s)
+//    }
+//
+//    s = ""
+//    for (i in arr.size - 1 downTo 0) {
+//        s += arr[i]
+//        if (i != 0) s += " "
+//    }
+//    return s
+    //endregion
 }
