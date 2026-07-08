@@ -23,7 +23,9 @@ fun maximumDistancePair(nums1: IntArray, nums2: IntArray): Int {
     var j = 0
 
     while (i < n1 && j < n2) {
-        if (nums1[i] <= nums2[j]) {
+        val one = nums1[i]
+        val two = nums2[j]
+        if (one <= two) {
             result = maxOf(result, j - i)
             j++
         }else{
@@ -32,12 +34,4 @@ fun maximumDistancePair(nums1: IntArray, nums2: IntArray): Int {
     }
 
     return result
-//    for (i in nums1.indices) {
-//        for (j in i until nums2.size) {
-//            if(nums1[i] <= nums2[j]){
-//                result = maxOf(result, j - i)
-//            }
-//        }
-//    }
-//    return result
 }
