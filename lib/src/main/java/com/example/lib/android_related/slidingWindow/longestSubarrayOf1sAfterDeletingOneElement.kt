@@ -4,10 +4,10 @@ fun main() {
 //    val nums = intArrayOf(1, 1, 0, 1)
     val nums = intArrayOf(0, 1, 1, 1, 0, 1, 1, 0, 1)
 //    val nums = intArrayOf(1, 1, 1)
-    println(longestSubarray(nums))
+    println(longestSubarrayOf1sAfterDeletingOneElement(nums))
 }
 
-fun longestSubarray(nums: IntArray): Int {
+fun longestSubarrayOf1sAfterDeletingOneElement(nums: IntArray): Int {
     var res = 0
     var zeroCount = 0
     var i = 0
