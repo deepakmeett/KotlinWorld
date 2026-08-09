@@ -11,11 +11,9 @@ fun main() {
 }
 
 fun permutationInString(s1: String, s2: String): Boolean {
-    var res = false
     val k = s1.length
     var l = 0
-    var word = ""
-    if (s1.length < s2.length) return res
+    if (s1.length > s2.length) return false
 
     val sArr1 = IntArray(26)
     val sArr2 = IntArray(26)
@@ -25,21 +23,19 @@ fun permutationInString(s1: String, s2: String): Boolean {
     }
 
     for (j in s2.indices) {
-        word += s2[j]
-        sArr2[s1[j] - 'a']++
+        sArr2[s2[j] - 'a']++
 
         if (j - l + 1 > k) {
-            sArr2[s1[j] - 'a']--
+            sArr2[s2[l] - 'a']--
             l++
         }
 
-        if (word.length == k) {
+        if (j - l + 1 == k) {
             if (sArr1.contentEquals(sArr2)) {
-                res = true
-                break
+                return true
             }
         }
     }
 
-    return res
+    return false
 }
