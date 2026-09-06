@@ -1,7 +1,8 @@
-package com.example.lib.dsa
+package com.example.lib.android_related.twoPointers
 
 fun main() {
-    print(removeDuplicates(intArrayOf(0,0,1,1,1,2,2,3,3,4)))
+    val nums = intArrayOf(0, 0, 1, 1, 1, 2, 2, 3, 3, 4)
+    print(removeDuplicates(nums))
 }
 
 fun removeDuplicates(nums: IntArray): Int {
@@ -14,6 +15,5 @@ fun removeDuplicates(nums: IntArray): Int {
             nums[i] = nums[j]
         }
     }
-    println(nums.joinToString())
     return i + 1
 }
