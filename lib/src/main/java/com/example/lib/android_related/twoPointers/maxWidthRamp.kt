@@ -4,11 +4,29 @@ package com.example.lib.android_related.twoPointers
 // Explanation: The maximum width ramp is achieved at (i, j) = (1, 5): nums[1] = 0 and nums[5] = 5.
 
 fun main() {
-    val nums = intArrayOf(6,0,8,2,1,5)
-//    val nums = intArrayOf(9, 8, 1, 0, 1, 9, 4, 0, 4, 1)
+//    val nums = intArrayOf(6, 0, 8, 2, 1, 5)
+    val nums = intArrayOf(9, 8, 1, 0, 1, 9, 4, 0, 4, 1)
     println(
-        maxWidthRamp(nums)
+        maxWidthRampNew(nums)
     )
+}
+
+fun maxWidthRampNew(nums: IntArray): Int {
+    var l = 0
+    var r = nums.size - 1
+
+    var res = 0
+
+    while (l < nums.size - 1) {
+        if (nums[l] <= nums[r]) {
+            res = maxOf(res, r - l)
+            l++
+            r = nums.size - 1
+        } else {
+            r--
+        }
+    }
+    return res
 }
 
 fun maxWidthRamp(nums: IntArray): Int {
