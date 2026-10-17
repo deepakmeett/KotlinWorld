@@ -26,10 +26,10 @@ fun smallestLetterGreaterThanTarget(letters: CharArray, target: Char): Char {
         val mid = (low + high) / 2
 
         if (letters[mid] <= target) {
-            low++
+            low = mid + 1
         } else {
             ans = mid
-            high--
+            high = mid - 1
         }
     }
     return letters[ans]
