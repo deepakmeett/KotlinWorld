@@ -1,5 +1,4 @@
-package com.example.lib.android_related.hashMapHashSet
-
+package com.example.lib.android_related.hashMap
 
 fun main() {
     println(sortByFrequency(listOf(1, 1, 2, 3, 3, 3, 4)))

@@ -1,7 +1,6 @@
-package com.example.lib.android_related.hashMapHashSet
+package com.example.lib.android_related.hashMap
 
 import kotlin.text.iterator
-
 
 fun main() {
     val name = "swiss"

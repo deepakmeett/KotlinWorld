@@ -1,4 +1,4 @@
-package com.example.lib.android_related.hashMapHashSet
+package com.example.lib.android_related.hashMap
 
 fun main() {
     val s = "anagram"

@@ -1,4 +1,4 @@
-package com.example.lib.android_related.hashMapHashSet
+package com.example.lib.android_related.hashSet
 
 fun main() {
     val list = listOf(7, 6, 7, 8, 4, 9, 4, 6)
