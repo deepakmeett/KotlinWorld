@@ -1,5 +1,8 @@
 package com.example.lib.android_related.stack
 
+//The span of the stock's price in one day is the maximum number of
+// consecutive days (starting from that day and going backward) for which the stock price was less than or equal to the price of that day.
+
 fun main() {
     val input = intArrayOf(100, 80, 60, 70, 60, 75, 85)
     println(stockSpanner(input))
