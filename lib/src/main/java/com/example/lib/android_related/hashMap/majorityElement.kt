@@ -11,7 +11,19 @@ fun majorityElement(nums: IntArray): Int {
     for (i in nums) {
         map[i] = map.getOrDefault(i, 0) + 1
     }
-    return map.maxByOrNull { it.value }!!.key}
+
+    var maxVal = Int.MIN_VALUE // Handles negative numbers too
+    var maxKey: String? = null
+
+    for ((key, value) in map) {
+        if (value > maxVal) {
+            maxVal = value
+            maxKey = key.toString()
+        }
+    }
+    return maxKey?.toInt() ?: 0
+//    return map.maxByOrNull { it.value }!!.key}
+}
 /**
  * Alternative: Boyer-Moore Voting Algorithm (O(N) Time, O(1) Space)
  */
